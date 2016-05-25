@@ -10,11 +10,11 @@
 		236D29B01CF471F400D53557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D29AF1CF471F400D53557 /* main.m */; };
 		236D29B31CF471F400D53557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D29B21CF471F400D53557 /* AppDelegate.m */; };
 		236D29B61CF471F400D53557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D29B51CF471F400D53557 /* ViewController.m */; };
-		236D29B91CF471F400D53557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236D29B71CF471F400D53557 /* Main.storyboard */; };
 		236D29BB1CF471F400D53557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236D29BA1CF471F400D53557 /* Assets.xcassets */; };
 		236D29BE1CF471F400D53557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236D29BC1CF471F400D53557 /* LaunchScreen.storyboard */; };
 		236D29C91CF471F400D53557 /* infiniteLoopRollDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D29C81CF471F400D53557 /* infiniteLoopRollDemoTests.m */; };
 		236D29D41CF471F400D53557 /* infiniteLoopRollDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D29D31CF471F400D53557 /* infiniteLoopRollDemoUITests.m */; };
+		FF6493869CEE4250857ADE8E /* libPods-infiniteLoopRollDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCC0435542DA9F079521B8C /* libPods-infiniteLoopRollDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		236D29B21CF471F400D53557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		236D29B41CF471F400D53557 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		236D29B51CF471F400D53557 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		236D29B81CF471F400D53557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		236D29BA1CF471F400D53557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236D29BD1CF471F400D53557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236D29BF1CF471F400D53557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		236D29CF1CF471F400D53557 /* infiniteLoopRollDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infiniteLoopRollDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		236D29D31CF471F400D53557 /* infiniteLoopRollDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = infiniteLoopRollDemoUITests.m; sourceTree = "<group>"; };
 		236D29D51CF471F400D53557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C0129CF370E6EF265AC3E1 /* Pods-infiniteLoopRollDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infiniteLoopRollDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-infiniteLoopRollDemo/Pods-infiniteLoopRollDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9DCC0435542DA9F079521B8C /* libPods-infiniteLoopRollDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-infiniteLoopRollDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A536095AF047C0BB285FD498 /* Pods-infiniteLoopRollDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infiniteLoopRollDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-infiniteLoopRollDemo/Pods-infiniteLoopRollDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6493869CEE4250857ADE8E /* libPods-infiniteLoopRollDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,8 @@
 				236D29C71CF471F400D53557 /* infiniteLoopRollDemoTests */,
 				236D29D21CF471F400D53557 /* infiniteLoopRollDemoUITests */,
 				236D29AC1CF471F400D53557 /* Products */,
+				932C43E8BEB6592429CB49D3 /* Pods */,
+				9F2C8E155C5DCCB042190237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +110,6 @@
 				236D29B21CF471F400D53557 /* AppDelegate.m */,
 				236D29B41CF471F400D53557 /* ViewController.h */,
 				236D29B51CF471F400D53557 /* ViewController.m */,
-				236D29B71CF471F400D53557 /* Main.storyboard */,
 				236D29BA1CF471F400D53557 /* Assets.xcassets */,
 				236D29BC1CF471F400D53557 /* LaunchScreen.storyboard */,
 				236D29BF1CF471F400D53557 /* Info.plist */,
@@ -140,6 +144,23 @@
 			path = infiniteLoopRollDemoUITests;
 			sourceTree = "<group>";
 		};
+		932C43E8BEB6592429CB49D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A536095AF047C0BB285FD498 /* Pods-infiniteLoopRollDemo.debug.xcconfig */,
+				82C0129CF370E6EF265AC3E1 /* Pods-infiniteLoopRollDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F2C8E155C5DCCB042190237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DCC0435542DA9F079521B8C /* libPods-infiniteLoopRollDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 236D29D81CF471F400D53557 /* Build configuration list for PBXNativeTarget "infiniteLoopRollDemo" */;
 			buildPhases = (
+				D5FDCCDB7F45F1F8190F35D2 /* 📦 Check Pods Manifest.lock */,
 				236D29A71CF471F400D53557 /* Sources */,
 				236D29A81CF471F400D53557 /* Frameworks */,
 				236D29A91CF471F400D53557 /* Resources */,
+				7D7824481BA27323201E52FD /* 📦 Embed Pods Frameworks */,
+				38502BB331F4FF0D875076BF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +269,6 @@
 			files = (
 				236D29BE1CF471F400D53557 /* LaunchScreen.storyboard in Resources */,
 				236D29BB1CF471F400D53557 /* Assets.xcassets in Resources */,
-				236D29B91CF471F400D53557 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38502BB331F4FF0D875076BF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-infiniteLoopRollDemo/Pods-infiniteLoopRollDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D7824481BA27323201E52FD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-infiniteLoopRollDemo/Pods-infiniteLoopRollDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FDCCDB7F45F1F8190F35D2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		236D29A71CF471F400D53557 /* Sources */ = {
@@ -308,14 +379,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		236D29B71CF471F400D53557 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				236D29B81CF471F400D53557 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		236D29BC1CF471F400D53557 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,23 +476,29 @@
 		};
 		236D29D91CF471F400D53557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A536095AF047C0BB285FD498 /* Pods-infiniteLoopRollDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = infiniteLoopRollDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junanxin.infiniteLoopRollDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		236D29DA1CF471F400D53557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C0129CF370E6EF265AC3E1 /* Pods-infiniteLoopRollDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = infiniteLoopRollDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junanxin.infiniteLoopRollDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +567,7 @@
 				236D29DA1CF471F400D53557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		236D29DB1CF471F400D53557 /* Build configuration list for PBXNativeTarget "infiniteLoopRollDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +576,7 @@
 				236D29DD1CF471F400D53557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		236D29DE1CF471F400D53557 /* Build configuration list for PBXNativeTarget "infiniteLoopRollDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +585,7 @@
 				236D29E01CF471F400D53557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
