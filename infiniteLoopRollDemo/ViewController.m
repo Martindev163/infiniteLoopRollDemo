@@ -36,8 +36,6 @@
     
     [super viewDidLoad];
     
-    _currentPage = 0;
-    
     [self loadSubViews];
     
     [self loadTimerLoopAction];
@@ -74,25 +72,29 @@
     self.pageControl.currentPageIndicatorTintColor = [UIColor yellowColor];
     [self.view addSubview:self.pageControl];
 }
-
+//在在定时器
 -(void)loadTimerLoopAction
 {
     self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(ScrollToNextImage) userInfo:nil repeats:YES];
 }
-
+//
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView.contentOffset.x > _imgCount*SCREENWIDTH) {
-        CGPoint set = self.scrollView.contentOffset;
-        set.x = 0;
-        self.scrollView.contentOffset = set;
-    }
+    
     if (scrollView.contentOffset.x < 0)
     {
         CGPoint set = self.scrollView.contentOffset;
         set.x = _maxX - SCREENWIDTH;
         self.scrollView.contentOffset = set;
+        return;
     }
+    else if (scrollView.contentOffset.x > _imgCount*SCREENWIDTH)
+    {
+        CGPoint set = self.scrollView.contentOffset;
+        set.x = 0;
+        self.scrollView.contentOffset = set;
+    }
+    
 }
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -106,27 +108,27 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(ScrollToNextImage) userInfo:nil repeats:YES];
 }
 
+//手动拖动停止判断是否是最后一个
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    _currentPage = scrollView.contentOffset.x/SCREENWIDTH;
-    
-    self.pageControl.currentPage = _currentPage;
+    if (scrollView.contentOffset.x >= _imgCount*SCREENWIDTH) {
+        [_scrollView setContentOffset:CGPointMake(0, 0) ];
+    }
+    self.pageControl.currentPage = scrollView.contentOffset.x/SCREENWIDTH;
 }
-
+//自动轮播
 -(void)ScrollToNextImage
 {
     __weak UIScrollView *weakScrollView = self.scrollView;
     [UIView animateWithDuration:0.3f animations:^{
-        weakScrollView.contentOffset = CGPointMake((_currentPage+1)*SCREENWIDTH, 0);
+        weakScrollView.contentOffset = CGPointMake((self.pageControl.currentPage+1)*SCREENWIDTH, 0);
     } completion:^(BOOL finished) {
-        if (_currentPage == _imgCount - 1) {
+        if (self.pageControl.currentPage == _imgCount - 1) {
             [weakScrollView setContentOffset:CGPointMake(0, 0) ];
-            _currentPage = 0;
             self.pageControl.currentPage = 0;
         }
         else
         {
-            _currentPage++;
             self.pageControl.currentPage ++;
         }
     }];
